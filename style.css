@@ -1,0 +1,393 @@
+/* ----- BASE DA PÁGINA ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+    color: #f4f0e7;
+    font-family: Arial, sans-serif;
+}
+
+/* ----- FAIXA DOURADA ----- */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: #d8b454;
+}
+
+/* ----- CABEÇALHO ----- */
+
+.cabecalho {
+    position: relative;
+    padding: 10px 5%;
+    background-color: #050505;
+    border-bottom: 1px solid #332a18;
+}
+
+.logo {
+    position: absolute;
+    top: 150px;
+    right: 7%;
+    width: 300px;
+    z-index: 2;
+}
+
+.nome-marca {
+    font-family: "Cinzel", serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: #d8b454;
+    margin: 10px 0;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.menu a {
+    color: #d8b454;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu a:hover {
+    color: #fff0b3;
+}
+
+/* ----- INÍCIO ----- */
+
+.inicio {
+    min-height: 420px;
+    padding: 50px 5%;
+    background: radial-gradient(circle at right, #30230d, #050505 70%);
+}
+
+.inicio h1 {
+    max-width: 650px;
+    font-family: "Cinzel", serif;
+    font-size: 42px;
+    line-height: 1.15;
+    color: #f4f0e7;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    color: #c2bcaf;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ----- BOTÕES ----- */
+
+.botao {
+    display: inline-block;
+    padding: 14px 20px;
+    margin: 10px 10px 0 0;
+    border: 1px solid #d8b454;
+    background-color: #d8b454;
+    color: #050505;
+    text-decoration: none;
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #f1d487;
+}
+
+.botao-contorno {
+    background-color: transparent;
+    color: #d8b454;
+}
+
+.botao-contorno:hover {
+    background-color: #f1d487;
+    color: #050505;
+}
+
+/* ----- BLOCOS ----- */
+
+.bloco {
+    padding: 50px 5%;
+}
+
+.bloco h2 {
+    font-family: "Cinzel", serif;
+    color: #d8b454;
+    margin-bottom: 30px;
+}
+
+.bloco h3 {
+    font-family: "Cinzel", serif;
+    color: #d8b454;
+    margin-bottom: 15px;
+}
+
+.bloco p {
+    color: #c2bcaf;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ----- SOBRE ----- */
+
+.sobre-colunas {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.sobre-texto p {
+    max-width: 600px;
+}
+
+.sobre-cartoes {
+    display: grid;
+    gap: 15px;
+}
+
+.cartao {
+    background-color: #14130f;
+    border: 1px solid #332a18;
+    border-left: 3px solid #d8b454;
+    padding: 20px;
+}
+
+.cartao h3 {
+    margin-bottom: 8px;
+}
+
+.cartao p {
+    margin-bottom: 0;
+}
+
+/* ----- REDES SOCIAIS ----- */
+
+.redes-sociais {
+    margin-top: 45px;
+    margin-right: 120px;
+}
+
+.redes-sociais h3 {
+    margin-bottom: 15px;
+}
+
+.redes-sociais .icone-rede {
+    width: 45px;
+    height: 45px;
+    margin-top: 0;
+    object-fit: contain;
+}
+
+.redes-sociais .icone-rede:hover {
+    width: 50px;
+}
+
+/* ----- LOCALIZAÇÃO ----- */
+
+.localizacao {
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* ----- MAPA E VÍDEO LADO A LADO ----- */
+
+.localizacao-conteudo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ----- MAPA ----- */
+
+.localizacao-conteudo iframe {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    height: 450px;
+    margin: 0;
+    border: 1px solid #332a18;
+}
+
+/* ----- VÍDEO ----- */
+
+.video-loja {
+    display: block;
+    flex: none;
+    width: 250px;
+    height: 450px;
+    margin: 0;
+    object-fit: contain;
+    border: 2px solid #d8b454;
+}
+
+/* ----- RODAPÉ ----- */
+
+.rodape {
+    background-color: #0d0c09;
+    border-top: 2px solid #d8b454;
+    padding: 50px 5% 20px;
+}
+
+.rodape-colunas {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.rodape-logo {
+    width: 150px;
+    height: auto;
+}
+
+.rodape-frase {
+    color: #c2bcaf;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+.rodape-coluna h4 {
+    font-family: "Cinzel", serif;
+    color: #d8b454;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.rodape-coluna a {
+    display: block;
+    color: #c2bcaf;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.rodape-coluna a:hover {
+    color: #d8b454;
+}
+
+.rodape-coluna p {
+    color: #c2bcaf;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ----- BARRA INFERIOR ----- */
+
+.rodape-baixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 1px solid #332a18;
+    padding-top: 20px;
+}
+
+.rodape-baixo p {
+    color: #8f897a;
+    font-size: 13px;
+}
+
+.voltar-topo {
+    color: #d8b454;
+    text-decoration: none;
+    font-family: "Cinzel", serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.voltar-topo:hover {
+    color: #fff0b3;
+}
+
+/* ----- CELULAR E TABLET ----- */
+
+@media (max-width: 900px) {
+
+    .cabecalho,
+    .inicio,
+    .bloco,
+    .rodape {
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+
+    .logo {
+        position: static;
+        width: 160px;
+        margin-top: 10px;
+    }
+
+    .nome-marca {
+        font-size: 28px;
+    }
+
+    .inicio h1 {
+        font-size: 30px;
+    }
+
+    .inicio {
+        min-height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .sobre-colunas {
+        grid-template-columns: 1fr;
+    }
+
+    .redes-sociais {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .localizacao {
+        margin: 40px auto;
+    }
+
+    .localizacao-conteudo iframe {
+        height: 300px;
+    }
+
+    .video-loja {
+        width: 35%;
+        height: 300px;
+    }
+
+    .rodape-colunas {
+        grid-template-columns: 1fr;
+    }
+
+    .rodape-baixo {
+        flex-direction: column;
+        text-align: center;
+    }
+}

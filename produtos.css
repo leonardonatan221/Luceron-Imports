@@ -1,0 +1,333 @@
+body {
+    background-color: #050505;
+    color: #f4f0e7;
+    font-family: Arial, sans-serif;
+    padding: 30px 5%;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background-color: #d8b454;
+}
+
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: #d8b454;
+}
+
+h2 {
+    font-family: "Cinzel", serif;
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: #d8b454;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #332a18;
+    margin: 20px 0;
+}
+
+
+.botao {
+    display: inline-block;
+    padding: 14px 20px;
+    margin: 10px 10px 0 0;
+    border: 1px solid #d8b454;
+    background-color: #d8b454;
+    color: #050505;
+    text-decoration: none;
+    font-family: "Cinzel", serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #f1d487;
+}
+
+.botao-contorno {
+    background-color: transparent;
+    color: #d8b454;
+}
+
+.botao-contorno:hover {
+    background-color: #f1d487;
+    color: #050505;
+}
+
+
+
+/* ---------- CARROSSEL ---------- */
+.carrossel {
+    position: relative;
+    padding: 0 60px; /* espaço nas laterais para as setas */
+}
+
+
+.carrossel2 {
+    position: relative;
+    padding: 0 60px; /* espaço nas laterais para as setas */
+}
+
+.carrossel3 {
+    position: relative;
+    padding: 0 60px; /* espaço nas laterais para as setas */
+}
+
+
+
+
+/* ---------- essa parte de Lista produtos serve para colocar as imagens uma do lado da outra ---------- */
+
+.lista-produtos1 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+.lista-produtos2 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+
+
+.lista-produtos3 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+.lista-produtos1::-webkit-scrollbar {
+    display: none;
+}
+
+.lista-produtos2::-webkit-scrollbar {
+    display: none;
+}
+
+.lista-produtos3::-webkit-scrollbar {
+    display: none;
+}
+
+/* ---------- SETAS DOURADAS ---------- */
+.seta {
+    position: absolute;
+    top: 185px; /* altura do meio da foto */
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #d8b454;
+    background-color: #050505;
+    color: #d8b454;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.seta:hover {
+    background-color: #d8b454;
+    color: #050505;
+}
+
+.seta-esquerda {
+    left: 0;
+}
+
+.seta-direita {
+    right: 0;
+}
+
+.seta-direita2 {
+    right: 0;
+}
+
+.seta-esquerda2 {
+    left: 0;
+}
+
+.seta-direita3 {
+    right: 0;
+}
+
+.seta-esquerda3 {
+    left: 0;
+}
+
+/* ---------- CARDS ---------- */
+.produto1 {
+    position: relative;
+    flex-shrink: 0;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #332a18;
+    background-color: #14130f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.produto1 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.info {
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgba(5, 5, 5, 0.95);
+    transition: max-height 0.4s ease;
+}
+
+
+.produto2 {
+    position: relative;
+    flex-shrink: 0;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #332a18;
+    background-color: #14130f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.produto2 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.produto3 {
+    position: relative;
+    flex-shrink: 0;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #332a18;
+    background-color: #14130f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.produto3 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ---------- APARECER AS INFORMAÇÕES PRA BAIXO ---------- */
+.produto1:hover .info {
+    max-height: 320px;
+}
+
+.produto2:hover .info {  
+    max-height: 320px;
+}
+
+.produto3:hover .info {  
+    max-height: 320px;
+}
+
+
+.info-conteudo {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info h3 {
+    color: #d8b454;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.info p {
+    color: #c2bcaf;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.preco {
+    color: #d8b454;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #d8b454;
+    color: #050505;
+    padding: 7px 14px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #f1d487;
+}
+
+
+/* ---------- CELULAR (telas até 700px) ---------- */
+@media (max-width: 700px) {
+
+    /* afasta o conteúdo da barra dourada */
+    body {
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+
+    /* títulos menores */
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    /* menos espaço nas laterais do carrossel */
+    .carrossel,
+    .carrossel2,
+    .carrossel3 {
+        padding: 0 40px;
+    }
+
+    /* setas um pouco menores */
+    .seta {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+}
